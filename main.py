@@ -107,6 +107,7 @@ class Game:
             while i > 2:
                 i-=1
                 if self.snake.x == self.snake.nodes[i][0] and self.snake.y == self.snake.nodes[i][1]:
+                    self.current_points = 1
                     return True
 
     def run(self):
